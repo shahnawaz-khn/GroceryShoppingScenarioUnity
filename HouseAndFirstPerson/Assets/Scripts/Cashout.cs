@@ -125,7 +125,6 @@ public class Cashout : MonoBehaviour
                 }
                 if (hit.collider.CompareTag("item5") && count < 5)
                 {
-                    count += 1;
                     foreach (GameObject go in allObjects)
                     {
                         if (go.name == "beets")
@@ -139,6 +138,7 @@ public class Cashout : MonoBehaviour
                             productSound.Play();
                         }
                     }
+                    count += 1;
                 }
                 if (hit.collider.CompareTag("register"))
                 {
